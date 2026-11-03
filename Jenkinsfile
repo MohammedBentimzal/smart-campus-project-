@@ -4,7 +4,6 @@ pipeline {
     // Node.js 22 est installé dans ~/tools. On l'ajoute au PATH de l'agent
     // (solution portable, sans dépendre d'un outil configuré dans Jenkins).
     environment {
-        PATH = "/home/abdoulnasser/tools/node-v22.12.0-linux-x64/bin:${env.PATH}"
         CI = 'true'
         NEXT_TELEMETRY_DISABLED = '1'
     }

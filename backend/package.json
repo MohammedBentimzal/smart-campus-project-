@@ -8,11 +8,16 @@
     "dev": "node --watch src/server.js",
     "test": "jest --forceExit --detectOpenHandles"
   },
-  "keywords": ["smartcampus", "api", "express", "sqlite"],
+  "keywords": [
+    "smartcampus",
+    "api",
+    "express",
+    "sqlite"
+  ],
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "better-sqlite3": "^11.7.0",
+    "better-sqlite3": "^12.11.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
@@ -25,6 +30,11 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "testMatch": ["**/tests/**/*.test.js"]
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  },
+  "allowScripts": {
+    "better-sqlite3@12.11.1": true
   }
 }
