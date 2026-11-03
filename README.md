@@ -115,3 +115,4 @@ Le job Jenkins `smartcampus-pipeline` est configuré avec un trigger **Poll SCM*
 pipeline dès qu'un nouveau commit apparaît sur `main`.
 
 Polling vérifié toutes les minutes (`* * * * *`).
+Testing GitHub Webhook with Jenkins
