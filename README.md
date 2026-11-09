@@ -117,3 +117,46 @@ pipeline dès qu'un nouveau commit apparaît sur `main`.
 Polling vérifié toutes les minutes (`* * * * *`).
 Testing GitHub Webhook with Jenkins
 Testing GitHub Webhook with Jenkins AFTER FIXING NGROK SHUTDOWN
+
+# REACT VS NEXT 
+# CLIENT SERVER RENDERING VS SERVER SIDE RENDERING 
+# CSR :
+      USER BROWSER
+             |
+             | HTTP Request
+             v
+       WEB SERVER
+             |
+             | Sends HTML + JS
+             v
+        USER BROWSER
+             |
+             | Executes JavaScript
+             v
+       React generates UI
+             |
+             v
+       DISPLAY DASHBOARD
+# SSR : Next js generate the html instead of the browser 
+      USER BROWSER
+                |
+                | GET /dashboard
+                v
+          NEXT.JS SERVER
+                |
+                | Executes React components
+                |
+                | Generates HTML
+                v
+          HTML RESPONSE
+                |
+                v
+          USER BROWSER
+                |
+                | Hydration (JavaScript)
+                v
+          INTERACTIVE PAGE
+# difference between scripts npm run dev , npm run build , npm run start 
+# npm run dev : run the app for developement mode using intalled dependencies using npm install 
+# npm run build : build application in .next for production 
+# npm run start : start the production server 

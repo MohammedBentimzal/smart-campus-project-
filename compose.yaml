@@ -5,12 +5,22 @@
 # Arrêt :     docker compose down        (les volumes sont conservés)
 
 services:
+  frontend:
+    image: smartcampus-front:v1
+    container_name: smartcampus-frontend
+    ports:
+      - "0.0.0.0:3000:3000"
+    environment:
+      API_URL: http://api:8080
+    depends_on:
+      api:
+        condition: service_healthy
   api:
     build: .
     image: smartcampus:1.0
     container_name: smartcampus
     ports:
-      - "8080:8080"
+      - "0.0.0.0:8080:8080"
     environment:
       DB_DRIVER: postgres
       # Nom d'hôte = nom du service compose → résolution DNS interne du réseau
