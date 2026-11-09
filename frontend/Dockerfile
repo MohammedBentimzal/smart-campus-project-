@@ -7,5 +7,5 @@ COPY /package*.json ./
 COPY . .
 
 RUN npm install 
-
+RUN np start
 CMD [ "npm","run","dev" ]
