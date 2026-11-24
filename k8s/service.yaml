@@ -1,0 +1,17 @@
+#it belongs to the core api group
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: smartcampus
+
+spec:
+  type: ClusterIP
+
+  selector:
+    app: smartcampus
+
+  ports:
+    - port: 80 #the port that the service listento 
+      targetPort: 8080  #target it to the 8080 backend container port 
+      protocol: TCP

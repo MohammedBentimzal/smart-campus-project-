@@ -160,3 +160,6 @@ Testing GitHub Webhook with Jenkins AFTER FIXING NGROK SHUTDOWN
 # npm run dev : run the app for developement mode using intalled dependencies using npm install 
 # npm run build : build application in .next for production 
 # npm run start : start the production server 
+
+# Kubernetes Understanding
+# apiVersion: API_GROUP / API_VERSION
